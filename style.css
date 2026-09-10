@@ -251,6 +251,22 @@ body::after {
 .nav-link.alert-link { color: #f43f5e; }
 .nav-link.alert-link:hover { text-shadow: 0 0 10px rgba(244, 63, 94, 0.6); }
 
+/* Mobile hamburger toggle button — hidden on desktop */
+.mobile-nav-toggle {
+    display: none;
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    color: #e2d9fa;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-nav-toggle:active { background: rgba(168, 85, 247, 0.25); }
+
 /* ==========================================================================
    VOLUMETRIC CONTAINER & SMOOTH ENTRANCE ANIMATIONS
    ========================================================================== */
@@ -1026,8 +1042,133 @@ body::after {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .hero-action-buttons, .dev-social-actions, .master-nav-links { justify-content: center; }
-    .master-nav-links, .nav-system-status { display: none; }
+    .hero-action-buttons, .dev-social-actions { justify-content: center; }
+    .nav-system-status { display: none; }
     .master-warning-banner { flex-direction: column; text-align: center; }
     .dev-avatar-wrap { margin: 0 auto; }
+
+    /* Collapse the nav into a slide-down mobile menu */
+    .mobile-nav-toggle { display: flex; }
+
+    .master-nav-links {
+        position: fixed;
+        top: 68px;
+        left: 0; right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(6, 4, 12, 0.97);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid rgba(168, 85, 247, 0.25);
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.35s ease, opacity 0.3s ease;
+        z-index: 999;
+    }
+    .master-nav-links.mobile-open {
+        max-height: 420px;
+        opacity: 1;
+    }
+    .master-nav-links .nav-link {
+        padding: 16px 6%;
+        width: 100%;
+        border-bottom: 1px solid rgba(168, 85, 247, 0.08);
+        font-size: 0.9rem;
+    }
 }
+
+/* ---- Tablet & large phone: scale everything down a notch ---- */
+@media (max-width: 768px) {
+    .master-navbar { padding: 14px 5%; }
+    .brand-title { font-size: 1.05rem; }
+    .brand-subtitle { font-size: 0.58rem; }
+    .custom-nav-logo, .fallback-logo-icon { width: 34px; height: 34px; }
+
+    .volumetric-container { padding: 0 18px; }
+
+    .master-hero-section { padding: 130px 0 60px 0; min-height: auto; }
+    .hero-main-heading { font-size: 2.1rem; line-height: 1.25; }
+    .hero-sub-title { font-size: 1rem; }
+    .hero-description { font-size: 0.9rem; }
+    .security-clearance-badge { font-size: 0.68rem; padding: 6px 12px; }
+
+    .hero-metrics-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .metric-box { padding: 12px 8px; }
+    .metric-val { font-size: 0.95rem; }
+    .metric-lbl { font-size: 0.62rem; }
+
+    .hero-action-buttons { flex-direction: column; gap: 12px; }
+    .cyber-btn { width: 100%; justify-content: center; padding: 13px 20px; font-size: 0.82rem; }
+
+    .window-title-text { font-size: 0.68rem; }
+    .window-console-body { padding: 18px; font-size: 0.74rem; }
+
+    .master-content-section { padding: 70px 0; }
+    .section-header-wrap { margin-bottom: 40px; }
+    .section-main-title { font-size: 1.6rem; }
+    .section-desc { font-size: 0.9rem; padding: 0 8px; }
+    .section-tag { font-size: 0.68rem; }
+
+    .tech-deep-card, .master-module-card, .platform-install-card,
+    .forensics-details-card, .master-developer-card { padding: 26px; }
+
+    .architecture-grid-layout, .modules-grid-container, .deployment-grid-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .doc-terminal-body, .code-terminal-block { padding: 16px; }
+    .doc-terminal-body { font-size: 0.72rem; }
+    .code-terminal-block code { font-size: 0.7rem; white-space: pre-wrap; word-break: break-all; }
+
+    .master-warning-banner { padding: 28px; gap: 20px; }
+    .warning-icon-wrap { font-size: 3rem; }
+    .warning-text-content h3 { font-size: 1.15rem; }
+
+    .master-developer-card { padding: 30px 24px; gap: 20px; }
+    .dev-social-actions { flex-direction: column; width: 100%; }
+    .social-btn { width: 100%; justify-content: center; }
+}
+
+/* ---- Small phones ---- */
+@media (max-width: 480px) {
+    .master-navbar { padding: 12px 4%; }
+    .brand-subtitle { display: none; }
+
+    .master-hero-section { padding: 110px 0 50px 0; }
+    .hero-main-heading { font-size: 1.6rem; letter-spacing: -0.5px; }
+    .hero-sub-title { font-size: 0.9rem; }
+    .hero-description { font-size: 0.85rem; line-height: 1.7; }
+
+    .hero-metrics-grid { grid-template-columns: 1fr 1fr; }
+    .hero-metrics-grid .metric-box:last-child { grid-column: span 2; }
+
+    .section-main-title { font-size: 1.3rem; }
+    .section-desc { font-size: 0.85rem; }
+
+    .master-terminal-window { border-radius: 8px; }
+    .window-titlebar { padding: 10px 14px; }
+    .c-dot { width: 9px; height: 9px; }
+
+    .mod-execution-path, .code-terminal-block { overflow-x: auto; }
+    .mod-execution-path code { white-space: pre-wrap; word-break: break-all; font-size: 0.72rem; }
+
+    .master-warning-banner { padding: 20px; }
+    .warning-text-content p { font-size: 0.85rem; }
+
+    .footer-content-wrap p { font-size: 0.78rem; }
+    .footer-sub-text { font-size: 0.68rem !important; }
+}
+
+/* Disable the heavier ambient effects on touch/small devices for a lighter, smoother feel */
+@media (max-width: 768px) {
+    .aurora-orb { filter: blur(60px); opacity: 0.4; }
+    .aurora-orb.orb-1 { width: 300px; height: 300px; }
+    .aurora-orb.orb-2 { width: 260px; height: 260px; }
+    .aurora-orb.orb-3 { width: 220px; height: 220px; }
+    .cursor-glow { display: none; }
+}
+
+/* Prevent any element from forcing horizontal scroll on mobile */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, svg { max-width: 100%; height: auto; }

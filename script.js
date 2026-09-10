@@ -69,4 +69,23 @@ document.addEventListener('DOMContentLoaded', function () {
         cursorGlow.style.display = 'none';
     }
 
+    // 4) Mobile hamburger menu toggle
+    var navToggle = document.getElementById('mobileNavToggle');
+    var navLinks = document.getElementById('mainNavLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+            var isOpen = navLinks.classList.toggle('mobile-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            navToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        // Close the menu once a link is tapped
+        navLinks.querySelectorAll('.nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                navLinks.classList.remove('mobile-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+    }
+
 });
