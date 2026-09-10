@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DARK-NET LOCATOR v5.0 - Advanced Red Team Reconnaissance & Cinematic Telemetry Framework">
+    <meta name="author" content="Sreenand K">
+    <title>DARK-NET LOCATOR v5.0 | Red Team Enterprise Reconnaissance Suite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-terminal-theme">
+
+    <!-- Ambient Matrix Grid Overlay & Scanlines Effect -->
+    <div class="matrix-grid-overlay"></div>
+    <div class="scanline-effect"></div>
+
+    <!-- Premium drifting violet aurora orbs (ambient background animation) -->
+    <div class="aurora-orb-layer">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- Master Navigation Header -->
+    <header class="master-navbar" id="top-header">
+        <div class="nav-brand-container">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="DarkNet Logo" class="custom-nav-logo" onerror="this.style.display='none'">
+                <div class="fallback-logo-icon"><i class="fas fa-terminal"></i></div>
+            </div>
+            <div class="brand-text-group">
+                <span class="brand-title">DARK<span>-</span>NET</span>
+                <span class="brand-subtitle">LOCATOR_v5.0 // CORE</span>
+            </div>
+        </div>
+
+        <div class="nav-system-status">
+            <span class="status-indicator active"></span>
+            <span class="status-text">RED-ROUTER NODE #804: ACTIVE</span>
+        </div>
+
+        <nav class="master-nav-links">
+            <a href="#section-overview" class="nav-link"><i class="fas fa-microchip"></i> 01.Overview</a>
+            <a href="#section-architecture" class="nav-link"><i class="fas fa-project-diagram"></i> 02.Architecture</a>
+            <a href="#section-modules" class="nav-link"><i class="fas fa-cogs"></i> 03.Modules</a>
+            <a href="#section-forensics" class="nav-link"><i class="fas fa-database"></i> 04.Forensics</a>
+            <a href="#section-deployment" class="nav-link"><i class="fas fa-terminal"></i> 05.Deployment</a>
+            <a href="#section-security" class="nav-link alert-link"><i class="fas fa-exclamation-triangle"></i> 06.Security</a>
+        </nav>
+    </header>
+
+    <!-- Main Container Wrapper for Massive Volumetric Data -->
+    <div class="volumetric-container">
+    <!-- HERO SECTION: Master Terminal Overview -->
+        <section class="master-hero-section" id="section-overview">
+            <div class="hero-grid-layout">
+                <div class="hero-left-column">
+                    <div class="security-clearance-badge">
+                        <i class="fas fa-shield-alt"></i> RESTRICTED ACCESS: RED TEAM OPERATIONAL ASSET
+                    </div>
+                    <h1 class="hero-main-heading">DARK-NET LOCATOR <span class="accent-version">v5.0</span></h1>
+                    <p class="hero-sub-title">Advanced Cross-Platform Telemetry Infiltration & Reconnaissance Toolkit</p>
+                    <p class="hero-description">
+                        Engineered specifically for deep packet inspection, multi-hop proxy routing, mobile signal triangulation, 
+                        and memory dump forensics. Designed to operate seamlessly across Android Termux, Kali Linux, Ubuntu, 
+                        macOS, and Windows command environments[cite: 1].
+                    </p>
+                    
+                    <div class="hero-metrics-grid">
+                        <div class="metric-box">
+                            <span class="metric-val">7-HOP</span>
+                            <span class="metric-lbl">Proxy Chain</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">AES-256</span>
+                            <span class="metric-lbl">Master Cipher</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">NODE #804</span>
+                            <span class="metric-lbl">Gateway Active</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-action-buttons">
+                        <a href="#section-deployment" class="cyber-btn primary-btn"><i class="fas fa-terminal"></i> Initialize Setup</a>
+                        <a href="#section-architecture" class="cyber-btn secondary-btn"><i class="fas fa-book-open"></i> Read Specs</a>
+                    </div>
+                </div>
+
+                <div class="hero-right-column">
+                    <div class="master-terminal-window">
+                        <div class="window-titlebar">
+                            <div class="window-controls">
+                                <span class="c-dot red"></span>
+                                <span class="c-dot yellow"></span>
+                                <span class="c-dot green"></span>
+                            </div>
+                            <span class="window-title-text">root@darknet-node:~# python3 darknet.py</span>
+                            <span class="window-status-badge">SECURE</span>
+                        </div>
+                        <div class="window-console-body">
+                            <p class="log-line text-dim"># BOOTSTRAPPING DARK-NET LOCATOR KERNEL...</p>
+                            <p class="log-line text-cyan">[·] Mounting encrypted volumes [████████████] ✔</p>
+                            <p class="log-line text-cyan">[·] Loading 7-hop proxy chain modules [████████████] ✔</p>
+                            <p class="log-line text-yellow">[!] DANGER: SENSITIVE NETWORK INFILTRATOR ACTIVE</p>
+                            <p class="log-line text-red">[!] TRAFFIC ENCRYPTED VIA RED-ROUTER NODE #804[cite: 1]</p>
+                            <div class="terminal-menu-block">
+                                <p class="text-white">========================================</p>
+                                <p class="text-green">  [1] Email-Based Device Lookup</p>
+                                <p class="text-green">  [2] Phone Number Tracer</p>
+                                <p class="text-green">  [3] IP Address Locator</p>
+                                <p class="text-green">  [4] Digital Forensics & Dump Reader</p>
+                                <p class="text-red">  [0] Exit Framework</p>
+                                <p class="text-white">========================================</p>
+                            </div>
+                            <p class="log-line text-green prompt-line">DARK-NET-LOCATOR&gt; <span class="cursor-blink">█</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ARCHITECTURE SECTION: Onion Routing & Node Protocol Deep-Dive -->
+        <section class="master-content-section" id="section-architecture">
+            <div class="section-header-wrap">
+                <span class="section-tag">02 // PROTOCOL SPECIFICATION</span>
+                <h2 class="section-main-title">DEEP-DIVE ARCHITECTURE & ONION ROUTING</h2>
+                <p class="section-desc">Exhaustive technical breakdown of proxy routing layers, cryptographic encapsulation, and node handshakes</p>
+            </div>
+
+            <div class="architecture-grid-layout">
+                <div class="tech-deep-card">
+                    <div class="card-icon-header"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Decentralized Onion Routing Layer</h3>
+                    <p>
+                        The Dark-Net Locator framework leverages decentralized overlay networks where data transmission packets 
+                        are wrapped in multiple layers of encryption, mimicking an onion structure[cite: 1]. Each intermediary node 
+                        (Entry Guard, Middle Relays, and Exit Nodes) only possesses cryptographic keys sufficient to decrypt 
+                        its specific routing layer[cite: 1].
+                    </p>
+                    <p>
+                        By ensuring that no single node ever possesses knowledge of both the originating IP address and the final 
+                        destination simultaneously, the protocol achieves absolute source-destination decoupling and protects 
+                        operators from passive traffic correlation analysis[cite: 1].
+                    </p>
+                    <div class="tech-specs-list">
+                        <span><i class="fas fa-check"></i> Layered AES Encryption</span>
+                        <span><i class="fas fa-check"></i> Zero-Knowledge Relays</span>
+                        <span><i class="fas fa-check"></i> Dynamic Path Rotation</span>
+                    </div>
+                </div>
+
+                <div class="tech-deep-card">
+                    <div class="card-icon-header"><i class="fas fa-shield-alt"></i></div>
+                    <h3>RED-ROUTER Node #804 Integration</h3>
+                    <p>
+                        At the core of the reconnaissance loop lies the master gateway module designated as RED-ROUTER NODE #804[cite: 1]. 
+                        This simulation engine coordinates 7-hop proxy chains, maintaining continuous socket heartbeats across 
+                        volatile network interfaces[cite: 1].
+                    </p>
+                    <p>
+                        In the event of an anomaly or packet signature mismatch, the gateway automatically executes an emergency 
+                        tunnel teardown, rotating the proxy chain and invalidating active session tokens to prevent adversarial 
+                        trace-back procedures[cite: 1].
+                    </p>
+                    <div class="tech-specs-list">
+                        <span><i class="fas fa-check"></i> 7-Hop Relay Enforcement[cite: 1]</span>
+                        <span><i class="fas fa-check"></i> Automated Cipher Rotation</span>
+                        <span><i class="fas fa-check"></i> Emergency Teardown Protocol</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MODULES SECTION: 4 Core Infiltration Vectors -->
+        <section class="master-content-section" id="section-modules">
+            <div class="section-header-wrap">
+                <span class="section-tag">03 // INFILTRATION ENGINES</span>
+                <h2 class="section-main-title">CORE OPERATIONAL MODULES</h2>
+                <p class="section-desc">Granular technical specifications of email, phone, IP, and forensics reconnaissance utilities</p>
+            </div>
+
+            <div class="modules-grid-container">
+                <!-- Module 1 -->
+                <div class="master-module-card">
+                    <div class="module-card-header">
+                        <span class="mod-id">[ MODULE 01 ]</span>
+                        <span class="mod-status text-green">ONLINE</span>
+                    </div>
+                    <h3>Email-Based Device Lookup</h3>
+                    <p class="mod-desc">
+                        Interrogates shadow identity indexes and remote email relay gateways to resolve target hardware profiles[cite: 1]. 
+                        When an authorized email handle is provided, the engine queries encrypted telemetry headers to output linked 
+                        smartphone models, unique hardware IMEI numbers, secondary cellular phone bindings, and live cloud authentication states[cite: 1].
+                    </p>
+                    <div class="mod-execution-path">
+                        <code>python3 darknet.py --target email --lookup [handle]</code>
+                    </div>
+                    <ul class="mod-specs-list">
+                        <li><strong>Latency:</strong> &lt; 450ms over 7-hop relay</li>
+                        <li><strong>Cipher:</strong> AES-512 session wrapper</li>
+                        <li><strong>Artifacts:</strong> IMEI, Device Model, Status[cite: 1]</li>
+                    </ul>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="master-module-card">
+                    <div class="module-card-header">
+                        <span class="mod-id">[ MODULE 02 ]</span>
+                        <span class="mod-status text-green">ONLINE</span>
+                    </div>
+                    <h3>Phone Number Tracer & Signal Mapper</h3>
+                    <p class="mod-desc">
+                        Executes multi-node packet tracing against regional telecommunication switching centers[cite: 1]. 
+                        Inputting a 10-digit mobile number initiates cross-referencing across localized network cells—resolving 
+                        specific geographical sectors (e.g., Chala, Kannur, Kerala), active carrier infrastructure (Jio/Airtel 5G Mesh), 
+                        and assigned dynamic IP gateways[cite: 1].
+                    </p>
+                    <div class="mod-execution-path">
+                        <code>python3 darknet.py --target phone --trace [number]</code>
+                    </div>
+                    <ul class="mod-specs-list">
+                        <li><strong>Granularity:</strong> District & Sector Level[cite: 1]</li>
+                        <li><strong>Carriers:</strong> Multi-ISP Node Polling[cite: 1]</li>
+                        <li><strong>Protocol:</strong> Encrypted Signaling Inspection[cite: 1]</li>
+                    </ul>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="master-module-card">
+                    <div class="module-card-header">
+                        <span class="mod-id">[ MODULE 03 ]</span>
+                        <span class="mod-status text-green">ONLINE</span>
+                    </div>
+                    <h3>IP Address Locator & Gateway Infiltration</h3>
+                    <p class="mod-desc">
+                        Performs deep network reconnaissance on IPv4 and IPv6 target nodes[cite: 1]. The utility routes socket requests 
+                        through the master proxy chain to mask operator fingerprints while probing remote perimeters[cite: 1]. 
+                        Evaluates firewall rule sets, identifies gateway bridge identifiers (such as RED-ROUTER node mappings), 
+                        and executes bypass verification checks[cite: 1].
+                    </p>
+                    <div class="mod-execution-path">
+                        <code>python3 darknet.py --target ip --probe [ipv4/ipv6]</code>
+                    </div>
+                    <ul class="mod-specs-list">
+                        <li><strong>Routing:</strong> 7-Hop Anonymized Relay[cite: 1]</li>
+                        <li><strong>Perimeter:</strong> Active Firewall Probing[cite: 1]</li>
+                        <li><strong>Gateways:</strong> RED-ROUTER #804 Mapping[cite: 1]</li>
+                    </ul>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="master-module-card">
+                    <div class="module-card-header">
+                        <span class="mod-id">[ MODULE 04 ]</span>
+                        <span class="mod-status text-green">ONLINE</span>
+                    </div>
+                    <h3>Digital Forensics & Dump Reader Engine</h3>
+                    <p class="mod-desc">
+                        Extracts, parses, and decrypts raw memory dumps and physical storage container artifacts[cite: 1]. 
+                        Capable of ingesting binary image files (`dump.bin`), the engine recovers massive blocks of raw data artifacts, 
+                        restores unindexed deleted SMS logs, and engages AES-256 master decryption keys to unlock secure storage partitions[cite: 1].
+                    </p>
+                    <div class="mod-execution-path">
+                        <code>python3 darknet.py --target forensics --parse dump.bin</code>
+                    </div>
+                    <ul class="mod-specs-list">
+                        <li><strong>Ingestion:</strong> High-Speed Binary Parsing[cite: 1]</li>
+                        <li><strong>Recovery:</strong> 128+ Deleted SMS Items[cite: 1]</li>
+                        <li><strong>Security:</strong> AES-256 Master Key Engagement[cite: 1]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- FORENSICS SECTION: Memory Dump & Telemetry Logs -->
+        <section class="master-content-section" id="section-forensics">
+            <div class="section-header-wrap">
+                <span class="section-tag">04 // DATA RECOVERY & TELEMETRY</span>
+                <h2 class="section-main-title">DIGITAL FORENSICS EXTRACTION SPECIFICATION</h2>
+                <p class="section-desc">Technical parameters governing raw artifact recovery, hex-dump analysis, and secure buffer logs</p>
+            </div>
+
+            <div class="forensics-container-layout">
+                <div class="terminal-documentation-box">
+                    <div class="doc-window-header">
+                        <span class="doc-title-text"><i class="fas fa-terminal"></i> FORENSICS BUFFER LOG — [ dump.bin ]</span>
+                        <span class="doc-badge text-green">AES-256 MASTER KEY ENGAGED</span>
+                    </div>
+                    <div class="doc-terminal-body">
+                        <p class="log-row text-dim">root@darknet-node:/opt/darknet/forensics# ./parser --target dump.bin --extract-all</p>
+                        <p class="log-row text-cyan">[*] Initializing raw binary stream parser...</p>
+                        <p class="log-row text-cyan">[*] Allocating 512MB secure memory buffer...</p>
+                        <p class="log-row text-green">[+] Artifacts Identified: 450 MB RAW DATA RECOVERED[cite: 1]</p>
+                        <p class="log-row text-green">[+] Messaging Database: 128 Deleted SMS Restored[cite: 1]</p>
+                        <p class="log-row text-yellow">[!] Key Derivation: AES-256 MASTER KEY ENGAGED[cite: 1]</p>
+                        <p class="log-row text-cyan">[*] Exporting structured JSON payload to /var/log/darknet/export_success.json</p>
+                        <p class="log-row text-green prompt-line">FORENSICS-PARSER&gt; extraction completed successfully. <span class="cursor-blink">█</span></p>
+                    </div>
+                </div>
+
+                <div class="forensics-details-card">
+                    <h3><i class="fas fa-microchip"></i> Hex-Dump & Artifact Reconstruction</h3>
+                    <p>
+                        The digital forensics engine operates directly on physical memory dumps or mobile storage partitions. 
+                        By bypassing unallocated space constraints, it reconstructs fragmented data packets, recovers deleted communication logs, 
+                        and decrypts secure application databases without altering file system timestamps[cite: 1].
+                    </p>
+                    <p>
+                        All recovered artifacts are encapsulated inside an encrypted staging buffer before being formatted into human-readable 
+                        reports or raw binary exports for downstream analysis.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- DEPLOYMENT SECTION: Cross-Platform Installation Guides -->
+        <section class="master-content-section" id="section-deployment">
+            <div class="section-header-wrap">
+                <span class="section-tag">05 // DEPLOYMENT MATRIX</span>
+                <h2 class="section-main-title">CROSS-PLATFORM INSTALLATION GUIDES</h2>
+                <p class="section-desc">Comprehensive command sequences for setting up the framework across mobile, Unix, and desktop environments</p>
+            </div>
+
+            <div class="deployment-grid-container">
+                <!-- Termux Box -->
+                <div class="platform-install-card">
+                    <div class="platform-card-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Termux (Android Field Ops)</h3>
+                    </div>
+                    <p class="platform-desc">
+                        Deploy lightweight mobile reconnaissance directly from Android terminal environments with full colorama output support[cite: 1].
+                    </p>
+                    <div class="code-terminal-block">
+                        <code>
+                            pkg update && pkg install python git -y<br>
+                            pip install colorama<br>
+                            git clone https://shadow-uplink.node/darknet-prop.git<br>
+                            cd darknet<br>
+                            python3 darknet.1.py
+                        </code>
+                    </div>
+                </div>
+
+                <!-- Linux / macOS Box -->
+                <div class="platform-install-card">
+                    <div class="platform-card-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Kali Linux / Ubuntu / macOS</h3>
+                    </div>
+                    <p class="platform-desc">
+                        Native Unix/Linux system execution utilizing advanced terminal emulators, proxy routing chains, and custom kernel wrappers[cite: 1].
+                    </p>
+                    <div class="code-terminal-block">
+                        <code>
+                            sudo apt update && sudo apt install python3 python3-pip -y<br>
+                            pip3 install colorama<br>
+                            git clone https://shadow-uplink.node/darknet-prop.git<br>
+                            cd darknet<br>
+                            python3 darknet.1.py
+                        </code>
+                    </div>
+                </div>
+
+                <!-- Windows Box -->
+                <div class="platform-install-card">
+                    <div class="platform-card-header">
+                        <i class="fab fa-windows"></i>
+                        <h3>Windows PowerShell / CMD</h3>
+                    </div>
+                    <p class="platform-desc">
+                        Execution via Python runtime environment supporting ANSI color rendering in PowerShell and Command Prompt windows[cite: 1].
+                    </p>
+                    <div class="code-terminal-block">
+                        <code>
+                            # Ensure Python 3.x is added to system PATH<br>
+                            pip install colorama<br>
+                            git clone https://shadow-uplink.node/darknet-prop.git<br>
+                            cd darknet<br>
+                            python darknet.1.py
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DEMO SECTION: Simulated Firewall Countermeasures -->
+        <section class="master-content-section" id="section-demo">
+            <div class="section-header-wrap">
+                <span class="section-tag">06 // COUNTERMEASURE SIMULATION</span>
+                <h2 class="section-main-title">AUTOMATED FIREWALL DEFENSE LOGS</h2>
+                <p class="section-desc">Visual simulation of adversarial intrusion detection, remote tracebacks, and session revocation protocols</p>
+            </div>
+
+            <div class="firewall-simulation-wrapper">
+                <div class="master-terminal-window warning-window">
+                    <div class="window-titlebar warning-titlebar">
+                        <div class="window-controls">
+                            <span class="c-dot red"></span>
+                            <span class="c-dot yellow"></span>
+                            <span class="c-dot green"></span>
+                        </div>
+                        <span class="window-title-text text-red">CRITICAL ALERT: GOOGLE ACCOUNT DEFENSE SYSTEM v9.3</span>
+                        <span class="window-status-badge alert-badge">LOCKED</span>
+                    </div>
+                    <div class="window-console-body alert-console-body">
+                        <p class="log-line text-red bold">  [!!] ANOMALY DETECTED ON MAIL RELAY NODE  [!!]</p>
+                        <p class="log-line text-white">  ==================================================================</p>
+                        <p class="log-line text-yellow">  [!] Suspicious packet signature flagged on mail gateway [FLAGGED]</p>
+                        <p class="log-line text-yellow">  [!] Origin IP routed through illegal proxy detected [DETECTED]</p>
+                        <p class="log-line text-red">  [!] Google Account Defense System — ALERT RAISED [ALERT]</p>
+                        <p class="log-line text-red">  [!] Tracing back intrusion vector — source triangulated [TRACING]</p>
+                        <p class="log-line text-red">  [!] Remote firewall countermeasures deployed [DEPLOYED]</p>
+                        <p class="log-line text-red">  [!] Session credentials revoked by remote node [REVOKED]</p>
+                        <p class="log-line text-red">  [!] Reporting incident to Cyber-Crime Division [REPORTED]</p>
+                        <p class="log-line text-white">  ==================================================================</p>
+                        <p class="log-line text-red bold">  🔒 ACCESS BLOCKED — SYSTEM LOCKED BY REMOTE FIREWALL</p>
+                        <p class="log-line text-yellow">  [!] INCOMING TRACE-BACK DETECTED — 5s REMAINING...</p>
+                        <p class="log-line text-red blink">  CONNECTION SEVERED — DARK-NET SESSION TERMINATED</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECURITY SECTION: Legal Disclaimers & Real-World Risks -->
+        <section class="master-content-section" id="section-security">
+            <div class="section-header-wrap">
+                <span class="section-tag">07 // MANDATORY COMPLIANCE</span>
+                <h2 class="section-main-title">SECURITY RISKS & LEGAL DISCLAIMERS</h2>
+                <p class="section-desc">Mandatory disclosures regarding automated tracking, legal liabilities, and operational boundaries</p>
+            </div>
+
+            <div class="warning-banner-container">
+                <div class="master-warning-banner">
+                    <div class="warning-icon-wrap"><i class="fas fa-skull-crossbones"></i></div>
+                    <div class="warning-text-content">
+                        <h3>CRITICAL LEGAL & SECURITY WARNING</h3>
+                        <p>
+                            This framework handles sensitive network reconnaissance assets, simulated telemetry packets, and proxy bypass routines[cite: 1]. 
+                            Unauthorized packet sniffing, probing third-party networks, or treating this framework as a casual joke carries 
+                            severe real-world risks[cite: 1]. Automated cyber-crime tracking cells and federal law enforcement nodes actively monitor 
+                            illegal network infiltration attempts, leading to rapid traceback, permanent hardware lockdown, and legal prosecution[cite: 1].
+                        </p>
+                        <p class="warning-sub-note">
+                            <strong>Authorized Scope:</strong> Strictly intended for red-team security audits, penetration testing simulations, 
+                            and cinematic short-film prop usage under controlled environments[cite: 1].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DEVELOPER SECTION: Repository & Architecture Profiles -->
+        <section class="master-content-section" id="section-developer">
+            <div class="section-header-wrap">
+                <span class="section-tag">08 // AUTHORSHIP & REPOSITORIES</span>
+                <h2 class="section-main-title">FRAMEWORK ARCHITECTURE & CREDITS</h2>
+                <p class="section-desc">Official authorship information, source code repositories, and developer identification</p>
+            </div>
+
+            <div class="developer-profile-container">
+                <div class="master-developer-card">
+                    <div class="dev-avatar-wrap">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="dev-info-content">
+                        <h3>DEVELOPED BY RAVANAN</h3>
+                        <p class="dev-role-title">Lead Security Architect & Red Team Developer</p>
+                        <p class="dev-bio">
+                            Framework engineered and maintained for authorized red-team security audits, penetration testing simulations, 
+                            and professional cinematic short-film production[cite: 1].
+                        </p>
+                        <div class="dev-social-actions">
+                            <a href="https://shadow-uplink.node/darknet-prop" target="_blank" class="cyber-btn social-btn">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="cyber-btn social-btn">
+                                <i class="fab fa-linkedin"></i> LinkedIn Developer Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MASTER FOOTER -->
+        <footer class="master-site-footer">
+            <div class="footer-content-wrap">
+                <p>&copy; 2026 DARK-NET LOCATOR v5.0. All rights reserved.</p>
+                <p class="footer-sub-text">Built for Advanced Red Team Reconnaissance, Security Auditing & Cinematic Scenarios.</p>
+                <div class="footer-links-inline">
+                    <a href="#top-header">Back to Top <i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- End of Volumetric Container -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
